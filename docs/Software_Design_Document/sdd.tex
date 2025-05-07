@@ -45,7 +45,7 @@ Software Design Document}
     \hline
     \textbf{User} & \textbf{Date} & \textbf{Reason for Changes} & \textbf{Version}\\
     \hline
-         &  &  & \\
+         Krystal Lo &  5/6/25 &  Update for snapshot 1 & 1.0 \\
     \hline
          &  &  & \\
     \hline
@@ -59,29 +59,82 @@ Software Design Document}
 
 \section{Introduction}
 \subsection{Purpose}
+The purpose of this document is to provide a detailed description of the Landfill e-Forms Application (LEF). This document will outline the system architecture, user interface, and intended audience for the application.
+\subsection{Scope}
+The scope of this document includes the design and implementation of the LEF. This document was created by the development team and is intended to be used as a reference for the project.
 \subsection{Intended Audience}
+The intended audience for this document includes the development team, project managers, and stakeholders involved in the LEF project. 
 \subsection{Overview}
+The LEF application will be a web-based application and a mobile application that allows users to submit and manage landfill-related forms electronically. The application will provide a user-friendly interface and will be designed to streamline the process of submitting and managing forms.
+\subsection{References}
+See the references section for a list of documents and resources referenced in this document.
+\subsection{Definitions, Acronyms, and Abbreviations}
+See the glossary section for definitions of terms, acronyms, and abbreviations used in this document.
 \newpage
 
 \section{System Architecture}
 \subsection{Workflow}
+The workflow of the LEF application consists of the following steps:
+\begin{itemize}
+    \item User submits a form through the mobile application.
+    \item The form data is sent to the web application for processing.
+    \item The web application verifies the data and stores it in the database.
+    \item Users can view and manage submitted forms through the web application.
+    \item Users can generate reports based on the submitted forms.
+\end{itemize}
 \subsection{Site Breakdown}
+The LEF application will consist of the following components:
+\begin{itemize}
+    \item Web Application: The main interface for users to submit and manage forms.
+    \item Mobile Application: The interface for users to submit forms on the go.
+    \item Database: The backend storage for all form data and user information.
+    \item Server: The server that hosts the web application and database.
+    \item API: The interface for communication between the mobile application and web application.
+    \item User Management: The system for managing user accounts and permissions.
+    \item Reporting: The system for generating reports based on submitted forms.
+    \item Equipment Management: The system for managing equipment inventory and types.
+    \item Exceedance Management: The system for managing exceedances and repairs.
+    \item Data Sync: The system for syncing data between the mobile application and web application.
+\end{itemize}
 \newpage
 
 \section{User Interface}
 \subsection{How to Use}
+\subsubsection{Web Application}
+Open the web application in a browser and log in using your credentials. The main dashboard contains icons for the following features:
+\begin{itemize}
+    \item Andriod Data Sync: Upload data from the mobile application and download data from the web application.
+    \item Unverified Forms: View data passed from the mobile application that has not been verified yet.
+    \item Exceedances: View current exceedances and their status, as well as conduct repairs.
+    \item Reports: View reports and filter them by type, location, and date.
+    \item Equipment: Manage equipment inventory and manage equipment types.
+    \item Users: View and manage users and user groups. Add, edit, assign user roles, and delete users.
+    \item Application Settings: (Visible only for administrators) Manage security token expiration times, adjust user account information, and change super administrator passwords.
+    \item Information: View information about the application, release notes, and user manuals.
+\end{itemize}
+\subsubsection{Mobile Application}
+If installing through Android Studio, we must first set up the Android Studio environment.Start Android Studio and select "Open an existing Android Studio project". Select the folder where the repository was cloned and select "landfill-android-app". \\\\
+For application installation, a phone with Android 5.1 (Lollipop) or higher is required. 
+\begin{itemize}
+\item To install through Android Studio, connect the phone to the computer. Go to Build $>$ Build APK and the application will be installed on the phone. 
+\item To install through File Download, ensure no device is connected and go to Build $>$ Build APK. The .apk file will be downloaded inside the project folder. To retrieve the .apk file, go to "landfill-android-app $>$ app $>$ build $>$ outputs $>$ apk". Send the .apk file to the selected device and open it to install.
+\end{itemize}
 \subsection{Database Explanation}
 \newpage
 
 \section*{Glossary}
 \addcontentsline{toc}{section}{Glossary}
 \begin{description}
-    \item[] 
+    \item[LEF] - Landfill e-Forms Application
+    \item[UI] - User Interface
+    \item[DB] - Database 
 \end{description}
 \newpage
 
 \addcontentsline{toc}{section}{References}
 \begin{thebibliography}{9}
+     Ascent - Project. (2017). Cysun.org. https://ascent.cysun.org/project/project/view/72
+     Ascent - Project. (2022). Cysun.org. https://ascent.cysun.org/project/project/view/44
 \end{thebibliography}
 
 \end{document}
