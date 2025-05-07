@@ -47,7 +47,7 @@ Software Design Document}
     \hline
          Krystal Lo &  5/6/25 &  Update for snapshot 1 & 1.0 \\
     \hline
-         &  &  & \\
+         Jason Salazar & 5/6/25 & Update for snapshot 2 & 2.0\\
     \hline
          &  &  & \\
     \hline
@@ -91,6 +91,21 @@ The LEF application will consist of the following components:
     \item \textbf{Server:} The server that hosts the web application and database.
     \item \textbf{API:} The interface for communication between the mobile application and web application.
 \end{itemize}
+
+\subsection{Architecture Overview}
+
+
+The mobile application follows a Model-View-ViewModel (MVVM) architectural pattern. The \textbf{View} consists of the UI screens for data entry and display. The \textbf{ViewModel} handles the logic and data preparation for the UI. The \textbf{Model} represents the data and interacts with the local database and the remote server. The "Audit" data entry screen and list view each have their corresponding ViewModels.
+
+\subsection{Data Flow - New Audit}
+
+\begin{enumerate}
+    \item The user interacts with the "New Audit" screen, entering data into the form fields.
+    \item The View binds user input to properties in the Audit ViewModel.
+    \item Upon saving, the ViewModel validates the data and interacts with the local data storage (Model) to contain the information in the local database.
+    \item When the user initiates synchronization, the ViewModel retrieves the locally stored audit data and send it to the backend API endpoint.
+\end{enumerate}
+
 \newpage
 
 \section{User Interface}

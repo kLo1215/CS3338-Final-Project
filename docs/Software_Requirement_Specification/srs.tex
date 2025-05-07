@@ -47,7 +47,7 @@ Software Requirement Specification}
     \hline
          Krystal Lo & 5/6/25  & Update for snapshot 1 & 1.0\\
     \hline
-         &  &  & \\
+        Jason Salazar & 5/6/25 & Update for snapshot 2 & 2.0\\
     \hline
          &  &  & \\
     \hline
@@ -79,6 +79,54 @@ The LEF application will be a web-based application and a mobile application tha
      \item The application will be built using Java, Spring Framework (Spring Boot), and Gradle.
      \item The application will use Microsoft SQL Server as the management system for the database.
 \end{itemize}
+\newpage
+
+\section{Specific Requirements}
+
+\subsection{Functional Requirements}
+
+\subsection{Requirements Related to Login Design}
+
+\begin{itemize}
+    \item \textbf{FR\_MOB\_LOGIN\_001 (3.2-1):} The Login module shall allow the user to enter their username and password.
+    \item \textbf{FR\_MOB\_LOGIN\_002 (3.2-2):} If the user's username and password match, the Login module shall redirect the user to the application.
+    \item \textbf{FR\_MOB\_LOGIN\_003 (3.2-3):} The Login module shall redirect the user back to the login screen upon failed login.
+\end{itemize}
+
+\subsubsection{Mobile Application}
+
+\begin{itemize}
+    \item \textbf{FR\_MOB\_001:} The mobile application shall allow users to enter a unique Location ID for each audit location.
+    \item \textbf{FR\_MOB\_002:} The mobile application shall allow users to input GPS coordinates for the audit location.
+    \item \textbf{FR\_MOB\_003:} The mobile application shall allow users to record the date and time of the audit.
+    \item \textbf{FR\_MOB\_004:} The mobile application shall provide a mechanism to save the entered "Audit Location" data locally on the device.
+    \item \textbf{FR\_MOB\_005:} The mobile application shall provide a view to display a list of locally saved "Audit" entries.
+\end{itemize}
+
+\subsubsection{Data Synchronization}
+
+\begin{itemize}
+    \item \textbf{FR\_SYNC\_001:} The mobile application shall initiate a connection to the designated private server.
+    \item \textbf{FR\_SYNC\_002:} The mobile application shall be capable of sending audit data to the backend server via an API call.
+\end{itemize}
+
+\subsubsection{Backend API}
+
+\begin{itemize}
+    \item \textbf{FR\_API\_001:} The backend server shall provide an API endpoint to receive audit data from the mobile application.
+    \item \textbf{FR\_API\_002:} The backend API shall respond to the mobile application with a status indicating the success or failure of the data reception.
+\end{itemize}
+
+\subsection{Non-Functional Requirements}
+
+\subsubsection{Mobile Application}
+
+\begin{itemize}
+    \item \textbf{NFR\_MOB\_PERF\_001:} The mobile application should save audit data locally within 2 seconds of the user tapping the "Save" button.
+    \item \textbf{NFR\_MOB\_USAB\_001:} The audit data entry form should be intuitive and easy for field personnel to use.
+    \item \textbf{NFR\_MOB\_RELI\_001:} Locally saved audit data should persist until explicitly deleted by the user or the application is uninstalled.
+\end{itemize}
+
 \newpage
 
 \section{Legal and Ethical Considerations}

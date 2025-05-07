@@ -9,6 +9,8 @@
 \contentsline {section}{\numberline {2}System Architecture}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Workflow}{4}{}%
 \contentsline {subsection}{\numberline {2.2}Site Breakdown}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Architecture Overview}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Data Flow - New Audit}{4}{}%
 \contentsline {section}{\numberline {3}User Interface}{5}{}%
 \contentsline {subsection}{\numberline {3.1}How to Use}{5}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Web Application}{5}{}%
