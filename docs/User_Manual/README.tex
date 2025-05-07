@@ -66,6 +66,18 @@ The Landfill e-Forms Application aims to modernize the City of Los Angeles, Depa
 \newpage
 
 \section*{How to Download and Access}
-\newpage
+\subsection{Web Application}
+To launch the front-end server, you will need to have Node and npm installed. You will also need to have Angular-CLI installed. A TypeScript editor is needed, such as Visual Studio Code.\newline
+Assuming Visual Studio Code is used, open the "landfill-web-app/client" folder.  Run the command ng serve to start the front-end server. The home page can then be accessed at http://localhost:4200/.\newline \newline
+To launch the back-end server, you will need to have Java 8 (JDK or OpenJDK recommended),  Eclipse or another Java IDE, and the Gradle Buildship plugin for Eclipse, or the equivalent for other IDEs, are required.\newline
+Start Eclipse and import "landfill-web-app/server" as a Gradle Project. If Gradle has not automatically downloaded the project dependencies, right click on the 'server' project folder and click "Gradle $\rightarrow$ Refresh Gradle Project". Add the Microsoft SQL Server JDBC driver "sqljdbc42.jar" from the "server/lib" directory to the project's build path.\newline
+To ensure that the proper 'dev' profile is loaded when running an instance of the back-end server on your machine, add the parameter "--spring.profiles.active=dev" to the run configuration in Eclipse. Note that the back-end server is set to listen on port 8080 for when running in development mode, so make sure that no other processes are listening on the same port number.
+\subsection{Mobile Application}
+To launch the mobile application, you will need to have Android Studio installed and Java 8 (JDK recommended). The use of another IDE for development will require the Android SDK to be installed seperately. Make sure that the Android SDK is installed and configured properly.\newline
+Open Android Studio and import the "landfill-web-app/mobile" folder as a new project. The Gradle build system will automatically download the project dependencies. \newline
+A phone running Android 5.1(Lollipop) or higher is required to run the application. The emulator can be used, but it is recommended to use a physical device for testing. Make sure that the device is connected to the same network as the back-end server.\newline
+If installing the application through Android Studio, connect the device to the computer and ensure the device is recognized. Go to "Build $>$ Build APK", which will install the application on the device.\newline
+Please note that after any updates to the databse, the application data must be cleared to avoid the application crashing. This can be done by going to the Application Manager on the device, selecting the Landfill e-Forms Application, and selecting "Clear All" application data.\newline
+If installing the application through file download, make sure there is no device connected to the computer. Go to "Build $>$ Build APK", which will create an APK file in the "landfill-web-app/mobile/app/build/outputs/apk" folder. Transfer the APK file to the device and open it to install it. 
 
 \end{document}
