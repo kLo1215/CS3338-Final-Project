@@ -85,16 +85,11 @@ The workflow of the LEF application consists of the following steps:
 \subsection{Site Breakdown}
 The LEF application will consist of the following components:
 \begin{itemize}
-    \item Web Application: The main interface for users to submit and manage forms.
-    \item Mobile Application: The interface for users to submit forms on the go.
-    \item Database: The backend storage for all form data and user information.
-    \item Server: The server that hosts the web application and database.
-    \item API: The interface for communication between the mobile application and web application.
-    \item User Management: The system for managing user accounts and permissions.
-    \item Reporting: The system for generating reports based on submitted forms.
-    \item Equipment Management: The system for managing equipment inventory and types.
-    \item Exceedance Management: The system for managing exceedances and repairs.
-    \item Data Sync: The system for syncing data between the mobile application and web application.
+    \item \textbf{Web Application:} The main interface for users to submit and manage forms.
+    \item \textbf{Mobile Application:} The interface for users to submit forms on the go.
+    \item \textbf{Database:} The backend storage for all form data and user information.
+    \item \textbf{Server:} The server that hosts the web application and database.
+    \item \textbf{API:} The interface for communication between the mobile application and web application.
 \end{itemize}
 \newpage
 
@@ -103,14 +98,14 @@ The LEF application will consist of the following components:
 \subsubsection{Web Application}
 Open the web application in a browser and log in using your credentials. The main dashboard contains icons for the following features:
 \begin{itemize}
-    \item Andriod Data Sync: Upload data from the mobile application and download data from the web application.
-    \item Unverified Forms: View data passed from the mobile application that has not been verified yet.
-    \item Exceedances: View current exceedances and their status, as well as conduct repairs.
-    \item Reports: View reports and filter them by type, location, and date.
-    \item Equipment: Manage equipment inventory and manage equipment types.
-    \item Users: View and manage users and user groups. Add, edit, assign user roles, and delete users.
-    \item Application Settings: (Visible only for administrators) Manage security token expiration times, adjust user account information, and change super administrator passwords.
-    \item Information: View information about the application, release notes, and user manuals.
+    \item \textbf{Andriod Data Sync:} Upload data from the mobile application and download data from the web application.
+    \item \textbf{Unverified Forms:} View data passed from the mobile application that has not been verified yet.
+    \item \textbf{Exceedances:} View current exceedances and their status, as well as conduct repairs.
+    \item \textbf{Reports:} View reports and filter them by type, location, and date.
+    \item \textbf{Equipment:} Manage equipment inventory and manage equipment types.
+    \item \textbf{Users:} View and manage users and user groups. Add, edit, assign user roles, and delete users.
+    \item \textbf{Application Settings:} (Visible only for administrators) Manage security token expiration times, adjust user account information, and change super administrator passwords.
+    \item \textbf{Information:} View information about the application, release notes, and user manuals.
 \end{itemize}
 \subsubsection{Mobile Application}
 If installing through Android Studio, we must first set up the Android Studio environment.Start Android Studio and select "Open an existing Android Studio project". Select the folder where the repository was cloned and select "landfill-android-app". \\\\
@@ -120,14 +115,20 @@ For application installation, a phone with Android 5.1 (Lollipop) or higher is r
 \item To install through File Download, ensure no device is connected and go to Build $>$ Build APK. The .apk file will be downloaded inside the project folder. To retrieve the .apk file, go to "landfill-android-app $>$ app $>$ build $>$ outputs $>$ apk". Send the .apk file to the selected device and open it to install.
 \end{itemize}
 \subsection{Database Explanation}
+The database for the LEF is handled by Microsoft SQL Server. It will store all data related to the forms, users, and equipment. The following tools are used to manage the database:
+\begin{itemize}
+     \item \textbf{Microsoft SQL Server:} The relational database management system.
+     \item \textbf{Microsoft SQL Server Management Studio (SSMS)}
+     \item \textbf{DBeaver (Alternative):} Universal database tool.
+ \end{itemize}
 \newpage
 
 \section*{Glossary}
 \addcontentsline{toc}{section}{Glossary}
 \begin{description}
-    \item[LEF] - Landfill e-Forms Application
-    \item[UI] - User Interface
-    \item[DB] - Database 
+    \item[\textbf{LEF}] - Landfill e-Forms Application
+    \item[\textbf{UI}] - User Interface
+    \item[\textbf{DB}] - Database 
 \end{description}
 \newpage
 

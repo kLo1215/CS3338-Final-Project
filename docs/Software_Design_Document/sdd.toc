@@ -13,6 +13,6 @@
 \contentsline {subsection}{\numberline {3.1}How to Use}{5}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Web Application}{5}{}%
 \contentsline {subsubsection}{\numberline {3.1.2}Mobile Application}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Database Explanation}{5}{}%
-\contentsline {section}{Glossary}{6}{}%
-\contentsline {section}{References}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Database Explanation}{6}{}%
+\contentsline {section}{Glossary}{7}{}%
+\contentsline {section}{References}{8}{}%
