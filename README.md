@@ -14,6 +14,7 @@ The LEF application will be a web-based application and a mobile application tha
 The system comprises:
 
 An Android Mobile Application: For field inspectors to collect data on-site.
+
 A Web Application: For office staff to upload, audit, and store data in a centralized database, and generate reports.
 
 **System Architecture**
