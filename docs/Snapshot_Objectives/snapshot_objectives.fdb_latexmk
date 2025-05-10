@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746822239.28102 "c:/Users/jsalaz130/Desktop/CS3338-Final-Project/docs/Snapshot_Objectives/snapshot_objectives.tex" "snapshot_objectives.pdf" "snapshot_objectives" 1746822241.24921 0
+["pdflatex"] 1746863703.10055 "c:/Users/jsalaz130/Desktop/CS3338-Final-Project/docs/Snapshot_Objectives/snapshot_objectives.tex" "snapshot_objectives.pdf" "snapshot_objectives" 1746863704.61318 0
   "C:/Users/jsalaz130/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746508704 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/jsalaz130/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1746508710 14064 b5ff650cbc41d7464673804a8e5bef7e ""
   "C:/Users/jsalaz130/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1745611699 24226975 f455d728e8f03e49f332f06c968db986 ""
@@ -30,9 +30,9 @@
   "C:/Users/jsalaz130/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/jsalaz130/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/jsalaz130/AppData/Local/Programs/MiKTeX/tex/latex/titling/titling.sty" 1252048308 7358 95ac619994bd30d405a74f3eca431c84 ""
-  "c:/Users/jsalaz130/Desktop/CS3338-Final-Project/docs/Snapshot_Objectives/snapshot_objectives.tex" 1746822138 1751 6b347a1dac5855008ac16bdbb018d6c7 ""
-  "snapshot_objectives.aux" 1746822240 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "snapshot_objectives.tex" 1746822138 1751 6b347a1dac5855008ac16bdbb018d6c7 ""
+  "c:/Users/jsalaz130/Desktop/CS3338-Final-Project/docs/Snapshot_Objectives/snapshot_objectives.tex" 1746863260 2056 18b3e452d1af074f72b4c366dfd24760 ""
+  "snapshot_objectives.aux" 1746863704 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "snapshot_objectives.tex" 1746863260 2056 18b3e452d1af074f72b4c366dfd24760 ""
   (generated)
   "snapshot_objectives.aux"
   "snapshot_objectives.log"
