@@ -12,6 +12,7 @@ Jira Project URL: https://calstatela-cs3338-spr25.atlassian.net/jira/your-work
 The LEF application will be a web-based application and a mobile application that allows users to submit and manage landfill-related forms electronically. The application will provide a user-friendly interface designed to streamline the process of submitting and managing forms.
 
 The system comprises:
+
 An Android Mobile Application: For field inspectors to collect data on-site.
 A Web Application: For office staff to upload, audit, and store data in a centralized database, and generate reports.
 
